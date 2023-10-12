@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js" integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+<style>
+
+#footer {
+  background: #35322d;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: pink;
+  position: relative;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #46423b;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #93385fff;
+}
+
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+
+#footer .credits {
+  font-size: 13px;
+}
+.eva{
+  width: 100%;
+  height: 40rem;
+}
+
+  
+.container{
+    width: 460px;
+    color:  #F8B7D8;
+
+   
+    
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 80px;
+    color: black;
+    padding-bottom: 20px;
+    text-shadow: 2px 3px white ;
+}
+header{
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2042508-jpeg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+#button{
+    background-color: #F8B7D8;
+}
+#box{
+    background-color: #F8B7D8;
+}
+a{
+
+margin-left: 60px;
+text-align: center;
+font-size: 15px;
+font-weight: lighter;
+color:  #F8B7D8; 
+}
+
+
+
+
+#passwordid{
+    width: 300px;
+}
+i{
+    cursor: pointer;
+    color: #F8B7D8;
+}
+
+#iconshow{
+    margin-left: -27px;
+}
+#iconhide{
+    margin-left: -27px;
+    display: none;
+}
+.anchor{
+  margin-top: 5rem;
+}
+
+
+</style>
+
+<body>
+    
+      <header>
+        <h1>Login page</h1>
+    <div class="container p-5">
+       
+        <div class="form-control bg-light p-3"  id="box">
+            
+            <div class="col-md-12 p-3">
+                <input type="email"  id="emailid" placeholder="email"  class="form-control"> <br> <br>
+                <div class="row">
+                  <div class="col-md-10 ">
+                    <input type="password"  id="passwordid" placeholder="password"  class="form-control"> <br> <br>
+                  </div>
+                 
+                  <div class="col-1 ">
+                    <i class="fa-solid fa-eye p-3 " onclick="myfun()" id="iconshow" ></i>
+                    <i class="fa fa-eye-slash p-3  "  onclick="myfun()" id="iconhide" ></i>
+                </div>
+                </div>
+              
+                
+                <button type="button" class="btn btn-basic col-md-12" onclick="loginfun()" id="button">login</button>
+
+               <a class="anchor" href="./register.html"> Haven't register yet.??</a>
+            </div>
+        </div>
+       
+       
+    </div>
+</header>
+
+
+<footer id="footer">
+  <div class="container">
+    <h3>Rock Paradise</h3>
+    <p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
+    <div class="social-links">
+      <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+      <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    </div>
+    <div class="copyright">
+      &copy; Copyright <strong><span>Rock paradise</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+     
+    </div>
+  </div>
+</footer>
+
+
+    
+
+
+
+
+      
+
+      
+      
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">  </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+  <script>
+    
+
+function loginfun(){
+    var emailvar=document.getElementById('emailid').value;
+    var passwordvar=document.getElementById('passwordid').value;
+
+    var checkemail=localStorage.getItem('emailkey');
+    var checkpassword=localStorage.getItem('passwordkey');
+
+    if(emailvar==checkemail && passwordvar==checkpassword){
+
+        window.open("index.html")
+
+    }
+    
+    else if(emailvar=="" &&  passwordvar==""){
+        alert("Please fill the form first...");
+    }
+    
+   
+    else{
+        alert("user email or password is incorrect");
+    }
+
+
+}
+
+
+function myfun(){
+
+var x =document.getElementById("passwordid")
+if (x.type==="password"){
+   x.type="text";
+
+   document.getElementById("iconshow").style.display="inline-block";
+   document.getElementById("iconhide").style.display="none";
+
+}
+
+else{
+   x.type="password";
+   document.getElementById("iconshow").style.display="none";
+   document.getElementById("iconhide").style.display="inline-block";
+}
+
+
+
+
+}
+
+</script>
+
+    
+
+
+</body>
+
+</html>
